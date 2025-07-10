@@ -1,0 +1,8 @@
+print("Bienvenido al Bootcamp de IA de Talento Tech")
+name = input("Digite su nombre:\n")
+lastname = input("Digite su apellido:\n")
+age = input("Digite su edad:\n")
+gender = input("Digite su género\n")
+print("\n------------------")
+print("Señor/a usuario, esta es su información: \n")
+print("Nombre: ", name, "\nApellido: ", lastname, "\nEdad: ", age, "\nGénero: ", gender)
