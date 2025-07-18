@@ -1,0 +1,28 @@
+print("Bienvenido al sistema de incentivos\n")
+name = input("Digite su nombre: \n")
+cargo = input("Digite su cargo en la empresa : tecnico/operario/administrativo\n")
+cal = int(input("Digite su calificación de 1 - 5"))
+salary = 1500000
+
+def cal_incentivo (cal, salary):
+    incentivo = 0
+    if (cal == 5):
+        incentivo = salary*30/100
+    elif (cal == 4):
+        incentivo = salary*20/100
+    elif (cal == 3):
+        incentivo = salary*10/100
+    else:
+        print("No recibe bono")
+
+    return incentivo
+
+def cal_bono (cargo, cal):
+    bono = 0
+    if (cargo == "tecnico" and cal >= 4):
+        print("Tienes un día libre")
+    elif (cargo == "operario" and cal == 5):
+        bono = 150000
+    elif (salary < 1500000 and cal < 3):
+        print("Calificación lamentable, requiere atención")
+    return 
